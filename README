@@ -64,8 +64,8 @@ Step 3. build kernel source
 -----------------------------
     Specify CROSS_COMPILE path to your Android source or NDK. Since LG G3 D858 is for CMCC,set kernel config as
 g3-cmcc_cn-perf_defconfig. Then you can start build kernel.
-    $export PATH=$PATH:tools/lz4demo    
-    $make ARCH=arm CROSS_COMPILE=../prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi- g3-cmcc_cn-perf_defconfig zImage -j4
+    $export PATH=$PATH:tools/lz4demo
+    $make ARCH=arm CROSS_COMPILE=../prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi- g3-cmcc_cn-perf_defconfig zImage -j4
 
     After build, you can find the build image(zImage) at arch/arm/boot
 
